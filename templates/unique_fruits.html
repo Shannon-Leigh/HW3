@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unique Fruits</title>
+</head>
+<body>
+    <h1>Unique Fruits in Baskets</h1>
+    <table border="1">
+        <tr>
+            <th>Basket A</th>
+            <th>Basket B</th>
+        </tr>
+        {% for i in range(max_length) %}
+        <tr>
+            <td>{{ fruits_a[i][0] if i < fruits_a|length else 'None' }}</td>
+            <td>{{ fruits_b[i][0] if i < fruits_b|length else 'None' }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
+
